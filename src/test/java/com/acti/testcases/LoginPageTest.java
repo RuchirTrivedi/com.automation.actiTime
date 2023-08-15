@@ -1,8 +1,7 @@
 package com.acti.testcases;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
+import org.testng.AssertJUnit;
 import com.acti.pages.EnterTimePage;
 
 public class LoginPageTest extends BaseTest
@@ -15,7 +14,7 @@ public class LoginPageTest extends BaseTest
 		String actual = "actiTIME - Login";
 		String expected = lp.getLoginPageTitle();
 		System.out.println(expected);
-		Assert.assertEquals(actual, expected);
+		AssertJUnit.assertEquals(actual, expected);
 		logger.pass("Actual title matched the expected");
 		
 	}
@@ -52,7 +51,7 @@ public class LoginPageTest extends BaseTest
 		logger.pass("Cliked on LoginButton");
 		EnterTimePage ep = new EnterTimePage();
 		String user = ep.getUserLoggedIn();
-		Assert.assertTrue(user.contains("John"));
+		AssertJUnit.assertTrue(user.contains("John"));
 		System.out.println(user);
 		logger.pass("User Logged in name contain John");
 		ep.ClickLogout();
