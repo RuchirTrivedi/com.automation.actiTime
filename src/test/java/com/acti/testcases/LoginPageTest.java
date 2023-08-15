@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.acti.pages.EnterTimePage;
-import com.aventstack.extentreports.ExtentTest;
 
 public class LoginPageTest extends BaseTest
 {	
