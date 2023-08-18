@@ -7,7 +7,7 @@ import com.acti.pages.EnterTimePage;
 public class LoginPageTest extends BaseTest
 {	
 	
-	@Test(priority = 1)
+	@Test(priority = 1,enabled = true)
 	public void testLoginPageTitle()
 	{
 		logger = report.createTest("Test Login Page Title");
@@ -20,7 +20,7 @@ public class LoginPageTest extends BaseTest
 	}
 	
 	
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = true)
 	public void testActiLogoDisplayed()
 	{
 		logger = report.createTest("Test actiTime logo");
@@ -30,7 +30,7 @@ public class LoginPageTest extends BaseTest
 		
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3,enabled = true)
 	public void testActiLinkDisplayed()
 	{
 		logger = report.createTest("Test actiTime Link");
@@ -39,7 +39,7 @@ public class LoginPageTest extends BaseTest
 		logger.pass("ActiTime Link is Displayed");
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 4,enabled = true)
 	public void testLoginFunction()
 	{
 		logger = report.createTest("Test Login Function");
